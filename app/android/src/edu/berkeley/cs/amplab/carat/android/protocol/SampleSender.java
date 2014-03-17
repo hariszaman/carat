@@ -66,7 +66,7 @@ public class SampleSender {
                         if (app.c != null) {
                             int tries = 0;
                             while (tries < 2) {
-                                try {
+                                //try {
                                     int success = app.c.uploadSamples(map.values());
     
                                     tries = 2;
@@ -99,7 +99,7 @@ public class SampleSender {
                                      */
                                     Log.d(TAG, "Deleted " + deleted + " samples.");
                                     successSum += success;
-                                } catch (Throwable th) {
+                                /*} catch (Throwable th) {
                                     // Any sort of malformed response, too short
                                     // string, etc...
                                     Log.w(TAG, "Failed to refresh reports: "
@@ -107,7 +107,9 @@ public class SampleSender {
                                             + (tries < 1 ? "Trying again now"
                                                     : TRY_AGAIN), th);
                                     tries++;
-                                }
+                                    if (tries == 2)
+                                        throw th;
+                                }*/
                             }
                         } else {
                             Log.w(TAG, "CommunicationManager is not ready yet."

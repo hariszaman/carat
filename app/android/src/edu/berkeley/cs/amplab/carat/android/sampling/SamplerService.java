@@ -112,10 +112,13 @@ public class SamplerService extends IntentService {
         Sampler.completeWakefulIntent(intent);
     }
     
+    private long lastNotify = 0;
     
     private void notify(Context context){
         int samples = CaratSampleDB.getInstance(context).countSamples();
-        if (samples >= 200){
+        long now = System.currentTimeMillis();
+        if (samples >= 500 && now > lastNotify + 3600*1000*48){
+            lastNotify = now;
         PendingIntent launchCarat = PendingIntent.getActivity(context, 0,
                 new Intent(context, CaratMainActivity.class), 0);
 
