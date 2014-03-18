@@ -8,7 +8,7 @@ import android.os.Bundle;
 public class CaratAboutActivity extends Activity {
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.about);
+		setContentView(R.layout.aboutcarat);
 		LocalizedWebView webview = (LocalizedWebView) findViewById(R.id.aboutView);
 		
 		webview.loadUrl("file:///android_asset/about.html");

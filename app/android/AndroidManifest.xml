@@ -8,6 +8,8 @@
     <uses-sdk
         android:minSdkVersion="8"
         android:targetSdkVersion="10" />
+    
+    
 
     <!-- Not actually required. -->
 <!--     <uses-permission android:name="android.permission.BATTERY_STATS" /> -->
@@ -137,6 +139,68 @@
                 <data android:scheme="package" /> 
             </intent-filter>
         </receiver>
+        
+        <!--  CatLog stuff -->
+        <activity android:name="com.nolanlawson.logcat.LogcatActivity" android:label="CatLog"
+			android:configChanges="keyboard|keyboardHidden|orientation"
+			android:launchMode="singleTop" android:windowSoftInputMode="stateHidden">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+			
+			<intent-filter>
+				<action android:name="com.nolanlawson.logcat.intents.LAUNCH" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>			
+		</activity>
+
+		<activity android:name="com.nolanlawson.logcat.AboutActivity" android:theme="@android:style/Theme.Dialog" />
+	
+		
+		<activity android:name="com.nolanlawson.logcat.ShowRecordLogDialogActivity" android:theme="@android:style/Theme.Dialog" />
+		
+
+		<activity android:name="com.nolanlawson.logcat.SettingsActivity" />
+
+		<service android:name="com.nolanlawson.logcat.LogcatRecordingService" />
+
+		<service android:name="com.nolanlawson.logcat.CrazyLoggerService"/>
+
+		<receiver android:name="com.nolanlawson.logcat.RecordingWidgetProvider">
+		
+			<intent-filter>
+				<action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+				<data android:scheme="catlog_widget"/>
+			</intent-filter>
+			
+			<intent-filter>
+				<action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+			</intent-filter>
+			
+			<intent-filter>
+				<action android:name="com.nolanlawson.logcat.action.RECORD_OR_STOP" />
+				<data android:scheme="catlog_widget" />
+			</intent-filter>
+			
+			
+			<meta-data android:name="android.appwidget.provider"
+				android:resource="@xml/recording_widget_info" />
+		</receiver>
+        
     </application>
+    
+    	<uses-permission android:name="android.permission.READ_LOGS" />
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+	
+	<!--  'Sup Koush: https://plus.google.com/103583939320326217147/posts/T9xnMJEnzf1 -->
+	<uses-permission android:name="android.permission.ACCESS_SUPERUSER" />
+
+	<supports-screens android:smallScreens="true"
+		android:normalScreens="true" android:largeScreens="true"
+		android:anyDensity="true" 
+		android:resizeable="true"/>
+	<!-- End CatLog stuff -->
+    
 
 </manifest>

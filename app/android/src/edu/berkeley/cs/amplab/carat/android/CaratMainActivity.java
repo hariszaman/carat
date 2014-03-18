@@ -63,7 +63,7 @@ public class CaratMainActivity extends TabActivity {
         // This does not show if it is not updated
         getWindow().requestFeature(Window.FEATURE_INDETERMINATE_PROGRESS);
         getWindow().requestFeature(Window.FEATURE_PROGRESS);
-        setContentView(R.layout.main);
+        setContentView(R.layout.maincarat);
 
         fullVersion = getString(R.string.app_name) + " "
                 + getString(R.string.version_name);
