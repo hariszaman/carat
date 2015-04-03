@@ -16,3 +16,4 @@ extern NSString* const kMemoryActive;
 extern NSString* const kUseWifiOnly;
 extern NSString* const kIsInternetActive;
 #define isUsingWifiOnly ([[[NSUserDefaults standardUserDefaults]objectForKey:kUseWifiOnly]boolValue]) ? 1 :0
+#define MAX_BATTERY_LIFE 1209600

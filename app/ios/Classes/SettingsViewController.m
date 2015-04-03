@@ -14,11 +14,13 @@
 #import "CoreDataManager.h"
 #import "UIDeviceHardware.h"
 #import "Flurry.h"
+#import "SummaryViewController.h"
 
 typedef NS_ENUM(NSUInteger, SettingsCellID) {
-	kSettingsCellWifiSwitch = 0,
-	kSettingsCellFeeback = 1,
-	kSettingsCellAbout = 2
+	KSettingsCellSummary = 0,
+	kSettingsCellWifiSwitch = 1,
+	kSettingsCellFeeback = 2,
+	kSettingsCellAbout = 3
 };
 
 @interface SettingsViewController ()<UITableViewDataSource, UITableViewDelegate>
@@ -55,7 +57,7 @@ typedef NS_ENUM(NSUInteger, SettingsCellID) {
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-	return 3;
+	return 4;
 }
 
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
@@ -95,6 +97,9 @@ typedef NS_ENUM(NSUInteger, SettingsCellID) {
 	}
 	cell.textLabel.textColor = [tableView separatorColor];
 	switch (indexPath.row) {
+  case KSettingsCellSummary:
+			cell.textLabel.text = @"Summary";
+			break;
   case kSettingsCellWifiSwitch:
 			cell.textLabel.text = @"Use Wifi Only";
 			//add a switch
@@ -122,6 +127,9 @@ typedef NS_ENUM(NSUInteger, SettingsCellID) {
 // loads the selected detail view
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
 	switch (indexPath.row) {
+  case KSettingsCellSummary:
+			[self _pushSummaryViewController];
+			break;
   case kSettingsCellFeeback:
 			[self _reportFeedback];
 			break;
@@ -142,6 +150,11 @@ typedef NS_ENUM(NSUInteger, SettingsCellID) {
 
 -(void) _presentAboutViewController{
 	AboutViewController *aboutView = [[[AboutViewController alloc] initWithNibName:@"AboutView" bundle:nil] autorelease];
+	[self.navigationController pushViewController:aboutView animated:YES];
+}
+
+-(void) _pushSummaryViewController{
+	SummaryViewController *aboutView = [[[SummaryViewController alloc] initWithNibName:@"SummmaryViewController" bundle:nil] autorelease];
 	[self.navigationController pushViewController:aboutView animated:YES];
 }
 

@@ -12,7 +12,6 @@
 #import "Flurry.h"
 #import "Utilities.h"
 #import "CoreDataManager.h"
-
 #import "ActionViewController.h"
 #import "CurrentViewController.h"
 #import "HogReportViewController.h"
@@ -97,9 +96,9 @@ void onUncaughtException(NSException *exception)
 - (BOOL)proceedWithConsent {
     DLog(@"Proceeding with consent");
     if (self.window == nil) self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
-    UIViewController *viewController0, *viewController1, *viewController2, *viewController3, *viewController4;
+    UIViewController *viewController0, *viewController1, *viewController2, *viewController3, *viewController4, *viewController5;
 
-    UINavigationController *navController0, *navController1, *navController2, *navController3, *navController4;
+    UINavigationController *navController0, *navController1, *navController2, *navController3, *navController4, *navController5;
     viewController0 = [[ActionViewController alloc] initWithNibName:@"ActionView" bundle:nil];
     navController0 = [[UINavigationController alloc] initWithRootViewController:viewController0];
     navController0.navigationBar.translucent = NO;
@@ -117,12 +116,13 @@ void onUncaughtException(NSException *exception)
     navController3.navigationBar.translucent = NO;
     navController3.navigationBarHidden = YES;
 	viewController4 = [[SettingsViewController alloc] initWithNibName:@"SettingsView" bundle:nil];
-
 	navController4 = [[UINavigationController alloc] initWithRootViewController:viewController4];
 	navController4.navigationBar.translucent = NO;
 	navController4.navigationBarHidden = YES;
-    self.tabBarController = [[[UITabBarController alloc] init] autorelease];
-   self.tabBarController.tabBar.translucent = NO;
+	self.tabBarController = [[[UITabBarController alloc] init] autorelease];
+
+	if ([self.tabBarController.tabBar respondsToSelector:@selector(setTranslucent:)])
+		self.tabBarController.tabBar.translucent = NO;
     self.tabBarController.viewControllers = [NSArray arrayWithObjects:navController0, navController1, navController2, navController3, navController4, nil];
 
 

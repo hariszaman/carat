@@ -23,6 +23,9 @@
 		661955B21A74044300865B2E /* Carat-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8D1107310486CEB800E47090 /* Carat-Info.plist */; };
 		6622E4721A852C14004A7EDF /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6622E4701A852C14004A7EDF /* SettingsViewController.m */; };
 		6622E4731A852C14004A7EDF /* SettingsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6622E4711A852C14004A7EDF /* SettingsView.xib */; };
+		662C110F1AC772B700799F98 /* battery.png in Resources */ = {isa = PBXBuildFile; fileRef = 662C110E1AC772B600799F98 /* battery.png */; };
+		662F03E21A97EB7900C6E4AD /* SummaryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 662F03E01A97EB7900C6E4AD /* SummaryViewController.m */; };
+		662F03E31A97EB7900C6E4AD /* SummaryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 662F03E11A97EB7900C6E4AD /* SummaryViewController.xib */; };
 		6676D13C1A4DDCDB0002FC1F /* CaratConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 6676D13B1A4DDCDB0002FC1F /* CaratConstants.m */; };
 		66D41BCB1A8F8EF800044C66 /* settings.png in Resources */ = {isa = PBXBuildFile; fileRef = 66D41BCA1A8F8EF800044C66 /* settings.png */; };
 		66EC15071A2A6A8E00153746 /* infoButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 66EC15051A2A6A8E00153746 /* infoButton@2x.png */; };
@@ -49,7 +52,6 @@
 		AB99EB0114EA6C130008E440 /* upgradeos.html in Resources */ = {isa = PBXBuildFile; fileRef = AB99EB0014EA6C130008E440 /* upgradeos.html */; };
 		AB99EB0414EA6CCD0008E440 /* deviceselect.png in Resources */ = {isa = PBXBuildFile; fileRef = AB99EB0214EA6CCD0008E440 /* deviceselect.png */; };
 		AB99EB0514EA6CCD0008E440 /* updatecheck.png in Resources */ = {isa = PBXBuildFile; fileRef = AB99EB0314EA6CCD0008E440 /* updatecheck.png */; };
-		AB9B57F3148EC51C004F92F2 /* libCorePlot-CocoaTouch.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AB9B57F2148EC51C004F92F2 /* libCorePlot-CocoaTouch.a */; };
 		AB9B580B148FEA10004F92F2 /* 37x-Checkmark.png in Resources */ = {isa = PBXBuildFile; fileRef = AB9B580A148FEA10004F92F2 /* 37x-Checkmark.png */; };
 		AB9B580D148FF31D004F92F2 /* 37x-X.png in Resources */ = {isa = PBXBuildFile; fileRef = AB9B580C148FF31D004F92F2 /* 37x-X.png */; };
 		ABAAA9FB161F7A0400504A9E /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABAAA9F9161F79D600504A9E /* MapKit.framework */; };
@@ -183,7 +185,11 @@
 		661955B31A740E2D00865B2E /* CoreDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataManager.h; sourceTree = "<group>"; };
 		6622E46F1A852C14004A7EDF /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
 		6622E4701A852C14004A7EDF /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
-		6622E4711A852C14004A7EDF /* SettingsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingsView.xib; sourceTree = "<group>"; };
+		6622E4711A852C14004A7EDF /* SettingsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SettingsView.xib; path = Classes/SettingsView.xib; sourceTree = "<group>"; };
+		662C110E1AC772B600799F98 /* battery.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = battery.png; sourceTree = "<group>"; };
+		662F03DF1A97EB7900C6E4AD /* SummaryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SummaryViewController.h; sourceTree = "<group>"; };
+		662F03E01A97EB7900C6E4AD /* SummaryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SummaryViewController.m; sourceTree = "<group>"; };
+		662F03E11A97EB7900C6E4AD /* SummaryViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SummaryViewController.xib; sourceTree = "<group>"; };
 		6676D13A1A4DDCDB0002FC1F /* CaratConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CaratConstants.h; sourceTree = "<group>"; };
 		6676D13B1A4DDCDB0002FC1F /* CaratConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CaratConstants.m; sourceTree = "<group>"; };
 		66D41BCA1A8F8EF800044C66 /* settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = settings.png; sourceTree = "<group>"; };
@@ -225,7 +231,7 @@
 		AB99EB0014EA6C130008E440 /* upgradeos.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = upgradeos.html; sourceTree = "<group>"; };
 		AB99EB0214EA6CCD0008E440 /* deviceselect.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = deviceselect.png; sourceTree = "<group>"; };
 		AB99EB0314EA6CCD0008E440 /* updatecheck.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = updatecheck.png; sourceTree = "<group>"; };
-		AB9B57F2148EC51C004F92F2 /* libCorePlot-CocoaTouch.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libCorePlot-CocoaTouch.a"; path = "Classes/libCorePlot-CocoaTouch.a"; sourceTree = "<group>"; };
+		AB9B57F2148EC51C004F92F2 /* libCorePlotCocoaTouch.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libCorePlotCocoaTouch.a; path = Classes/libCorePlotCocoaTouch.a; sourceTree = "<group>"; };
 		AB9B580A148FEA10004F92F2 /* 37x-Checkmark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "37x-Checkmark.png"; sourceTree = "<group>"; };
 		AB9B580C148FF31D004F92F2 /* 37x-X.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "37x-X.png"; sourceTree = "<group>"; };
 		ABAAA9F9161F79D600504A9E /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
@@ -425,7 +431,6 @@
 		C7547EB019963CFD007A01CF /* HogDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HogDetailViewController.m; sourceTree = "<group>"; };
 		C7547EB319963CFD007A01CF /* InstructionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InstructionViewController.h; sourceTree = "<group>"; };
 		C7547EB419963CFD007A01CF /* InstructionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InstructionViewController.m; sourceTree = "<group>"; };
-		C7547EB519963CFD007A01CF /* libCorePlot-CocoaTouch.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libCorePlot-CocoaTouch.a"; sourceTree = "<group>"; };
 		C7547EB619963CFD007A01CF /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		C7547EB719963CFD007A01CF /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 		C7547EB919963CFD007A01CF /* PGTableViewWithEmptyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PGTableViewWithEmptyView.h; sourceTree = "<group>"; };
@@ -690,7 +695,6 @@
 				ABAAA9FB161F7A0400504A9E /* MapKit.framework in Frameworks */,
 				ABD31903148EC41C000A8DC7 /* QuartzCore.framework in Frameworks */,
 				C75488E619963D04007A01CF /* libFlurry_5.0.0.a in Frameworks */,
-				AB9B57F3148EC51C004F92F2 /* libCorePlot-CocoaTouch.a in Frameworks */,
 				ABD318EC148D8733000A8DC7 /* MessageUI.framework in Frameworks */,
 				ABD318EA148D8703000A8DC7 /* Security.framework in Frameworks */,
 				C18E106E1466591A0028095B /* CoreData.framework in Frameworks */,
@@ -713,15 +717,11 @@
 			isa = PBXGroup;
 			children = (
 				C7547EAA19963CFD007A01CF /* Globals.h */,
-				C7547EAB19963CFD007A01CF /* Globals.m */,
 				C14F5C34145BDA9900087F74 /* AsyncUdpSocket.h */,
 				C14F5C35145BDA9900087F74 /* AsyncUdpSocket.m */,
 				C14F5C2C145BD4D300087F74 /* AsyncSocket.h */,
 				C14F5C2D145BD4D300087F74 /* AsyncSocket.m */,
 				1D3623240D0F684500981E51 /* CaratAppDelegate.h */,
-				6622E46F1A852C14004A7EDF /* SettingsViewController.h */,
-				6622E4701A852C14004A7EDF /* SettingsViewController.m */,
-				6622E4711A852C14004A7EDF /* SettingsView.xib */,
 				AB41CDF6144E1E520090CC09 /* CaratAppDelegate.m */,
 				AB41CDF1144E1AF60090CC09 /* UIDeviceProc.h */,
 				AB41CDF2144E1AF60090CC09 /* UIDeviceProc.m */,
@@ -734,6 +734,7 @@
 				C7547F1719963CFD007A01CF /* UIImageDoNotCache.h */,
 				C7547F1819963CFD007A01CF /* UIImageDoNotCache.m */,
 				C7547F1919963CFD007A01CF /* Utilities.h */,
+				C7547EAB19963CFD007A01CF /* Globals.m */,
 				C7547F1A19963CFD007A01CF /* Utilities.m */,
 				C7547EA219963CFD007A01CF /* DatabaseManager.h */,
 				C7547EA319963CFD007A01CF /* DatabaseManager.m */,
@@ -796,6 +797,10 @@
 				ABEC9B6714F1D9FF005CE813 /* license.txt */,
 				ABA3A10214E4A560009B3D33 /* html */,
 				C18E107014665E230028095B /* Carat.xcdatamodeld */,
+				662F03DF1A97EB7900C6E4AD /* SummaryViewController.h */,
+				662F03E01A97EB7900C6E4AD /* SummaryViewController.m */,
+				662F03E11A97EB7900C6E4AD /* SummaryViewController.xib */,
+				6622E4711A852C14004A7EDF /* SettingsView.xib */,
 				C754877D19963D02007A01CF /* ProcessItemCell.xib */,
 				C754877E19963D02007A01CF /* ProcessListView.xib */,
 				ABC07A1F14859E7500FCC2C2 /* AboutView.xib */,
@@ -829,7 +834,7 @@
 				AB3B89C816C03A26007C8596 /* Social.framework */,
 				AB41CDF9144E3B660090CC09 /* SystemConfiguration.framework */,
 				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
-				AB9B57F2148EC51C004F92F2 /* libCorePlot-CocoaTouch.a */,
+				AB9B57F2148EC51C004F92F2 /* libCorePlotCocoaTouch.a */,
 				AB8121E216C04F5B005FBE96 /* libsqlite3.0.dylib */,
 				E4A720DBC61F40BDB6246B59 /* libPods.a */,
 			);
@@ -873,6 +878,7 @@
 				C7547F2319963CFD007A01CF /* Default-Landscape~ipad.png */,
 				C7547F2419963CFD007A01CF /* Default-Portrait.png */,
 				C7547F2519963CFD007A01CF /* Default-Portrait@2x.png */,
+				662C110E1AC772B600799F98 /* battery.png */,
 				C7547F2719963CFD007A01CF /* Default-Portrait~ipad.png */,
 				C7547E0519963590007A01CF /* Default-Landscape@2x.png */,
 				ABE8DA7415247B3E0024C111 /* Default-Portrait@2x~ipad.png */,
@@ -911,7 +917,6 @@
 		AB91E431149024C3007786F0 /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				C7547EB519963CFD007A01CF /* libCorePlot-CocoaTouch.a */,
 				C7547E5019963CFD007A01CF /* CorePlotHeaders */,
 				C7547E4819963CFD007A01CF /* CoreDataRegistration.h */,
 				C7547E4919963CFD007A01CF /* CoreDataRegistration.m */,
@@ -972,6 +977,8 @@
 				C7547EBC19963CFD007A01CF /* ProcessItemCell.m */,
 				C7547EC119963CFD007A01CF /* ReportItemCell.h */,
 				C7547EC219963CFD007A01CF /* ReportItemCell.m */,
+				6622E46F1A852C14004A7EDF /* SettingsViewController.h */,
+				6622E4701A852C14004A7EDF /* SettingsViewController.m */,
 				C7547EC319963CFD007A01CF /* ReportViewController.h */,
 				C7547EC419963CFD007A01CF /* ReportViewController.m */,
 				C7547EAD19963CFD007A01CF /* HiddenAppsViewController.h */,
@@ -1542,6 +1549,8 @@
 				661955AD1A73FE2F00865B2E /* collectdata.html in Resources */,
 				AB99EB0414EA6CCD0008E440 /* deviceselect.png in Resources */,
 				AB99EB0514EA6CCD0008E440 /* updatecheck.png in Resources */,
+				662C110F1AC772B700799F98 /* battery.png in Resources */,
+				662F03E31A97EB7900C6E4AD /* SummaryViewController.xib in Resources */,
 				C7548CC219963ED0007A01CF /* Icon-Small-50.png in Resources */,
 				661955AC1A73FE2900865B2E /* activebatterylife.html in Resources */,
 				ABEC9B6814F1DA00005CE813 /* license.txt in Resources */,
@@ -1601,6 +1610,7 @@
 				C7E31C2F1A66D9410007CC19 /* UIScrollView+SVPullToRefresh.m in Sources */,
 				C74130D319EDC72D00A1E8CE /* ProcessListViewController.h in Sources */,
 				C74130D419EDC72D00A1E8CE /* ProcessListViewController.m in Sources */,
+				662F03E21A97EB7900C6E4AD /* SummaryViewController.m in Sources */,
 				C754889419963D04007A01CF /* ProcessItemCell.m in Sources */,
 				C74130C519EDC6EA00A1E8CE /* SDImageCache.h in Sources */,
 				C74130C619EDC6EA00A1E8CE /* SDImageCache.m in Sources */,
@@ -1711,7 +1721,7 @@
 				GCC_PREFIX_HEADER = Carat_Prefix.pch;
 				GCC_PREPROCESSOR_DEFINITIONS = "";
 				"GCC_PREPROCESSOR_DEFINITIONS[arch=*]" = "DEBUG_MODE=1";
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_VERSION = "";
 				INFOPLIST_FILE = "Carat-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1.1;
 				LIBRARY_SEARCH_PATHS = (
@@ -1725,11 +1735,10 @@
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = (
 					"-ObjC",
-					"-all_load",
 					"$(inherited)",
 				);
 				PRODUCT_NAME = Carat;
-				PROVISIONING_PROFILE = "50d7b4b7-e12f-416b-9d06-6769342e0806";
+				PROVISIONING_PROFILE = "052a019e-f655-4198-af78-11e94a5723c5";
 				USER_HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/Pods/BuildHeaders/";
 				"USER_HEADER_SEARCH_PATHS[arch=*]" = "$(BUILT_PRODUCTS_DIR)/** $(PROJECT_DIR)/Pods/BuildHeaders/";
 			};
@@ -1754,7 +1763,8 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Carat_Prefix.pch;
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_PREPROCESSOR_DEFINITIONS = NS_BLOCK_ASSERTIONS;
+				GCC_VERSION = "";
 				INFOPLIST_FILE = "Carat-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1.1;
 				LIBRARY_SEARCH_PATHS = (
@@ -1768,11 +1778,10 @@
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = (
 					"-ObjC",
-					"-all_load",
 					"$(inherited)",
 				);
 				PRODUCT_NAME = Carat;
-				PROVISIONING_PROFILE = "50d7b4b7-e12f-416b-9d06-6769342e0806";
+				PROVISIONING_PROFILE = "052a019e-f655-4198-af78-11e94a5723c5";
 				SKIP_INSTALL = NO;
 				USER_HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/Pods/BuildHeaders/ $(PROJECT_DIR)/Pods/BuildHeaders/";
 				"USER_HEADER_SEARCH_PATHS[arch=*]" = "$(BUILT_PRODUCTS_DIR)/** $(PROJECT_DIR)/Pods/BuildHeaders/";
@@ -1816,7 +1825,8 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Carat_Prefix.pch;
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_PREPROCESSOR_DEFINITIONS = "";
+				GCC_VERSION = "";
 				INFOPLIST_FILE = "Carat-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1.1;
 				LIBRARY_SEARCH_PATHS = (
@@ -1830,11 +1840,10 @@
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = (
 					"-ObjC",
-					"-all_load",
 					"$(inherited)",
 				);
 				PRODUCT_NAME = Carat;
-				PROVISIONING_PROFILE = "50d7b4b7-e12f-416b-9d06-6769342e0806";
+				PROVISIONING_PROFILE = "052a019e-f655-4198-af78-11e94a5723c5";
 				USER_HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/Pods/BuildHeaders/";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -1865,6 +1874,7 @@
 				CLANG_ENABLE_OBJC_ARC = NO;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Eemil Lagerspetz (K5L69FXDVN)";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = NS_BLOCK_ASSERTIONS;
 				GCC_THUMB_SUPPORT = NO;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
