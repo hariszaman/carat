@@ -186,8 +186,8 @@
 		6622E46F1A852C14004A7EDF /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
 		6622E4701A852C14004A7EDF /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
 		6622E4711A852C14004A7EDF /* SettingsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SettingsView.xib; path = Classes/SettingsView.xib; sourceTree = "<group>"; };
-		66295E591ACEFA82004E72C9 /* SummaryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SummaryViewController.h; sourceTree = "<group>"; };
-		66295E5A1ACEFA82004E72C9 /* SummaryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SummaryViewController.m; sourceTree = "<group>"; };
+		66295E591ACEFA82004E72C9 /* SummaryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SummaryViewController.h; path = ../SummaryViewController.h; sourceTree = "<group>"; };
+		66295E5A1ACEFA82004E72C9 /* SummaryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SummaryViewController.m; path = ../SummaryViewController.m; sourceTree = "<group>"; };
 		66295E5B1ACEFA82004E72C9 /* SummaryView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SummaryView.xib; sourceTree = "<group>"; };
 		662C110E1AC772B600799F98 /* battery.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = battery.png; sourceTree = "<group>"; };
 		6676D13A1A4DDCDB0002FC1F /* CaratConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CaratConstants.h; sourceTree = "<group>"; };
@@ -797,8 +797,6 @@
 				ABEC9B6714F1D9FF005CE813 /* license.txt */,
 				ABA3A10214E4A560009B3D33 /* html */,
 				C18E107014665E230028095B /* Carat.xcdatamodeld */,
-				66295E591ACEFA82004E72C9 /* SummaryViewController.h */,
-				66295E5A1ACEFA82004E72C9 /* SummaryViewController.m */,
 				66295E5B1ACEFA82004E72C9 /* SummaryView.xib */,
 				6622E4711A852C14004A7EDF /* SettingsView.xib */,
 				C754877D19963D02007A01CF /* ProcessItemCell.xib */,
@@ -977,6 +975,8 @@
 				C7547EBC19963CFD007A01CF /* ProcessItemCell.m */,
 				C7547EC119963CFD007A01CF /* ReportItemCell.h */,
 				C7547EC219963CFD007A01CF /* ReportItemCell.m */,
+				66295E591ACEFA82004E72C9 /* SummaryViewController.h */,
+				66295E5A1ACEFA82004E72C9 /* SummaryViewController.m */,
 				6622E46F1A852C14004A7EDF /* SettingsViewController.h */,
 				6622E4701A852C14004A7EDF /* SettingsViewController.m */,
 				C7547EC319963CFD007A01CF /* ReportViewController.h */,
