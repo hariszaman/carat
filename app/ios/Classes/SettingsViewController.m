@@ -154,7 +154,7 @@ typedef NS_ENUM(NSUInteger, SettingsCellID) {
 }
 
 -(void) _pushSummaryViewController{
-	SummaryViewController *aboutView = [[[SummaryViewController alloc] initWithNibName:@"SummmaryViewController" bundle:nil] autorelease];
+	SummaryViewController *aboutView = [[[SummaryViewController alloc] initWithNibName:@"SummaryView" bundle:nil] autorelease];
 	[self.navigationController pushViewController:aboutView animated:YES];
 }
 

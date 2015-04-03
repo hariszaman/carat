@@ -99,10 +99,10 @@ typedef NS_ENUM(NSUInteger, PieChartSlices) {
 	graph.paddingBottom = 0.0f;
 	graph.axisSet = nil;
 	// 2 - Set up text style
-//	CPTMutableTextStyle *textStyle = [CPTMutableTextStyle textStyle];
-//	textStyle.color = [CPTColor grayColor];
-//	textStyle.fontName = @"Helvetica-Bold";
-//	textStyle.fontSize = 16.0f;
+	//	CPTMutableTextStyle *textStyle = [CPTMutableTextStyle textStyle];
+	//	textStyle.color = [CPTColor grayColor];
+	//	textStyle.fontName = @"Helvetica-Bold";
+	//	textStyle.fontSize = 16.0f;
 	// 4 - Set theme
 
 	self.selectedTheme = [CPTTheme themeNamed:kCPTPlainWhiteTheme];
@@ -163,8 +163,8 @@ typedef NS_ENUM(NSUInteger, PieChartSlices) {
 	graph.legend = self.theLegend;
 	graph.legendAnchor = CPTRectAnchorTop;
 	CPTMutableTextStyle *mySmallerTextStyle = [[[CPTMutableTextStyle alloc] init] autorelease];
-//
-//	//This is the important property for your needs
+	//
+	//	//This is the important property for your needs
 	[mySmallerTextStyle setFontSize:self.hostView.bounds.size.height * 0.05];
 	CGFloat legendPadding = -(5.0);
 	//[[graph legend] setTextStyle:(CPTTextStyle *)mySmallerTextStyle];
@@ -252,16 +252,16 @@ typedef NS_ENUM(NSUInteger, PieChartSlices) {
 
 	self.hogs.text = [NSString stringWithFormat:@"%lu Hogs",(unsigned long)self.hogReport.hbList.count];
 	self.bugs.text = [NSString stringWithFormat:@"%lu Bugs",(unsigned long)self.bugReport.hbList.count];
-    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0)
+	dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0)
 				   ,^{
 					   NSURL* statsURL = [NSURL URLWithString:kSTATS_URL];
 					   NSData* data = [NSData dataWithContentsOfURL:
 									   statsURL];
 					   dispatch_async(dispatch_get_main_queue(), ^(void){
 						   [self _processDataFromURL:data];
-						});
+					   });
 				   }
-				  );
+				   );
 	// Do any additional setup after loading the view from its nib.
 }
 
@@ -331,6 +331,7 @@ typedef NS_ENUM(NSUInteger, PieChartSlices) {
 }
 
 -(void) viewWillAppear:(BOOL)animated{
+	[self.navigationController setNavigationBarHidden:NO animated:YES];
 	[super viewWillAppear:animated];
 
 	// Expected Battery Life
@@ -378,9 +379,9 @@ typedef NS_ENUM(NSUInteger, PieChartSlices) {
 	if(self.interfaceOrientation == UIInterfaceOrientationLandscapeLeft||
 	   self.interfaceOrientation == UIInterfaceOrientationLandscapeRight)
 	{
-		CGRect rect = self.topView.frame;
-		rect.origin.y = self.navigationController.navigationBar.frame.size.height+10;
-		self.topView.frame = rect;
+//		CGRect rect = self.topView.frame;
+//		rect.origin.y = self.navigationController.navigationBar.frame.size.height+10;
+//		self.topView.frame = rect;
 		CPTMutableTextStyle *mySmallerTextStyle = [[[CPTMutableTextStyle alloc] init] autorelease];
 
 		[mySmallerTextStyle setFontSize:self.hostView.bounds.size.height * 0.08];

@@ -23,9 +23,9 @@
 		661955B21A74044300865B2E /* Carat-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8D1107310486CEB800E47090 /* Carat-Info.plist */; };
 		6622E4721A852C14004A7EDF /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6622E4701A852C14004A7EDF /* SettingsViewController.m */; };
 		6622E4731A852C14004A7EDF /* SettingsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6622E4711A852C14004A7EDF /* SettingsView.xib */; };
+		66295E5C1ACEFA82004E72C9 /* SummaryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66295E5A1ACEFA82004E72C9 /* SummaryViewController.m */; };
+		66295E5D1ACEFA82004E72C9 /* SummaryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 66295E5B1ACEFA82004E72C9 /* SummaryView.xib */; };
 		662C110F1AC772B700799F98 /* battery.png in Resources */ = {isa = PBXBuildFile; fileRef = 662C110E1AC772B600799F98 /* battery.png */; };
-		662F03E21A97EB7900C6E4AD /* SummaryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 662F03E01A97EB7900C6E4AD /* SummaryViewController.m */; };
-		662F03E31A97EB7900C6E4AD /* SummaryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 662F03E11A97EB7900C6E4AD /* SummaryViewController.xib */; };
 		6676D13C1A4DDCDB0002FC1F /* CaratConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 6676D13B1A4DDCDB0002FC1F /* CaratConstants.m */; };
 		66D41BCB1A8F8EF800044C66 /* settings.png in Resources */ = {isa = PBXBuildFile; fileRef = 66D41BCA1A8F8EF800044C66 /* settings.png */; };
 		66EC15071A2A6A8E00153746 /* infoButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 66EC15051A2A6A8E00153746 /* infoButton@2x.png */; };
@@ -186,10 +186,10 @@
 		6622E46F1A852C14004A7EDF /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
 		6622E4701A852C14004A7EDF /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
 		6622E4711A852C14004A7EDF /* SettingsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SettingsView.xib; path = Classes/SettingsView.xib; sourceTree = "<group>"; };
+		66295E591ACEFA82004E72C9 /* SummaryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SummaryViewController.h; sourceTree = "<group>"; };
+		66295E5A1ACEFA82004E72C9 /* SummaryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SummaryViewController.m; sourceTree = "<group>"; };
+		66295E5B1ACEFA82004E72C9 /* SummaryView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SummaryView.xib; sourceTree = "<group>"; };
 		662C110E1AC772B600799F98 /* battery.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = battery.png; sourceTree = "<group>"; };
-		662F03DF1A97EB7900C6E4AD /* SummaryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SummaryViewController.h; sourceTree = "<group>"; };
-		662F03E01A97EB7900C6E4AD /* SummaryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SummaryViewController.m; sourceTree = "<group>"; };
-		662F03E11A97EB7900C6E4AD /* SummaryViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SummaryViewController.xib; sourceTree = "<group>"; };
 		6676D13A1A4DDCDB0002FC1F /* CaratConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CaratConstants.h; sourceTree = "<group>"; };
 		6676D13B1A4DDCDB0002FC1F /* CaratConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CaratConstants.m; sourceTree = "<group>"; };
 		66D41BCA1A8F8EF800044C66 /* settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = settings.png; sourceTree = "<group>"; };
@@ -797,9 +797,9 @@
 				ABEC9B6714F1D9FF005CE813 /* license.txt */,
 				ABA3A10214E4A560009B3D33 /* html */,
 				C18E107014665E230028095B /* Carat.xcdatamodeld */,
-				662F03DF1A97EB7900C6E4AD /* SummaryViewController.h */,
-				662F03E01A97EB7900C6E4AD /* SummaryViewController.m */,
-				662F03E11A97EB7900C6E4AD /* SummaryViewController.xib */,
+				66295E591ACEFA82004E72C9 /* SummaryViewController.h */,
+				66295E5A1ACEFA82004E72C9 /* SummaryViewController.m */,
+				66295E5B1ACEFA82004E72C9 /* SummaryView.xib */,
 				6622E4711A852C14004A7EDF /* SettingsView.xib */,
 				C754877D19963D02007A01CF /* ProcessItemCell.xib */,
 				C754877E19963D02007A01CF /* ProcessListView.xib */,
@@ -1540,6 +1540,7 @@
 				ABB1221C14E9E7C300FE959A /* procmanager1.png in Resources */,
 				C75488C419963D04007A01CF /* Default-Portrait@2x.png in Resources */,
 				AB9525B014EA1B6F00343418 /* killapp.html in Resources */,
+				66295E5D1ACEFA82004E72C9 /* SummaryView.xib in Resources */,
 				C75488C619963D04007A01CF /* Default-Portrait~ipad.png in Resources */,
 				C7548CC119963ED0007A01CF /* Icon-40@2x.png in Resources */,
 				C75488BE19963D04007A01CF /* Default-568h@2x.png in Resources */,
@@ -1550,7 +1551,6 @@
 				AB99EB0414EA6CCD0008E440 /* deviceselect.png in Resources */,
 				AB99EB0514EA6CCD0008E440 /* updatecheck.png in Resources */,
 				662C110F1AC772B700799F98 /* battery.png in Resources */,
-				662F03E31A97EB7900C6E4AD /* SummaryViewController.xib in Resources */,
 				C7548CC219963ED0007A01CF /* Icon-Small-50.png in Resources */,
 				661955AC1A73FE2900865B2E /* activebatterylife.html in Resources */,
 				ABEC9B6814F1DA00005CE813 /* license.txt in Resources */,
@@ -1610,7 +1610,7 @@
 				C7E31C2F1A66D9410007CC19 /* UIScrollView+SVPullToRefresh.m in Sources */,
 				C74130D319EDC72D00A1E8CE /* ProcessListViewController.h in Sources */,
 				C74130D419EDC72D00A1E8CE /* ProcessListViewController.m in Sources */,
-				662F03E21A97EB7900C6E4AD /* SummaryViewController.m in Sources */,
+				66295E5C1ACEFA82004E72C9 /* SummaryViewController.m in Sources */,
 				C754889419963D04007A01CF /* ProcessItemCell.m in Sources */,
 				C74130C519EDC6EA00A1E8CE /* SDImageCache.h in Sources */,
 				C74130C619EDC6EA00A1E8CE /* SDImageCache.m in Sources */,
